@@ -12,7 +12,7 @@ class DentistSerializer(serializers.HyperlinkedModelSerializer):
 class ClientSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Client
-        fields = ('client_id', 'name', 'surname', 'dentist')
+        fields = ('client_id', 'name', 'surname', 'dentist', 'image')
 
 
 class TeethColorSerializer(serializers.HyperlinkedModelSerializer):

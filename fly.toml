@@ -1,4 +1,4 @@
-# fly.toml file generated for whitesite on 2022-12-29T13:05:27+01:00
+# fly.toml file generated for whitesite on 2023-01-21T12:16:15+01:00
 
 app = "whitesite"
 kill_signal = "SIGINT"

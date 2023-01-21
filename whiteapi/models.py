@@ -11,7 +11,8 @@ class Dentist(models.Model):
     def __str__(self):
         return self.username
 
-
+    def get_clients(self):
+        return self.client_set.all()
 class Client(models.Model):
     client_id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=20)
@@ -20,7 +21,7 @@ class Client(models.Model):
         Dentist,
         on_delete=models.CASCADE
     )
-
+    image = models.ImageField(upload_to='clients/', default='./../user-icon.png')
     def __str__(self):
         return self.name + self.surname
 
