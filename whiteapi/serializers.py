@@ -18,4 +18,4 @@ class ClientSerializer(serializers.HyperlinkedModelSerializer):
 class TeethColorSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = TeethColor
-        fields = ('teethcolor_id', 'color', 'date', 'client')
+        fields = ('teethcolor_id', 'color', 'date', 'client', 'image')

@@ -52,6 +52,7 @@ class TeethColor(models.Model):
         Client,
         on_delete=models.CASCADE
     )
+    image = models.ImageField(upload_to='teethcolor/', default='./../tooth.jpeg')
 
     def __str__(self):
         return self.color + str(self.date) + self.client.name
